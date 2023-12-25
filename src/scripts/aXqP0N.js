@@ -1,1 +1,1 @@
-console.log('Hello from CDN!')
+console.log('Hello from CDN script [aXqPON]');

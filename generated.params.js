@@ -7,5 +7,5 @@ function generarCodigo(lengthID) {
     }
     return codigo;
 }
-var codigoAleatorio = `${generarCodigo(16)}`;
+var codigoAleatorio = `${generarCodigo(6)}`;
 console.log(codigoAleatorio);
