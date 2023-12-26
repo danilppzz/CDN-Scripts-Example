@@ -1,0 +1,68 @@
+paths:
+  /:
+    get:
+      description: Server default root.
+      responses:
+        200:
+          description: "GET / return an object with information about the api."
+
+  /scripts/{getId}:
+    get:
+      description: Get the scripts from the storage.
+      parameters:
+        - name: getId
+          in: path
+          description: "You have to put an id of some script."
+          required: true
+        - name: x-api-key
+          in: header
+          description: "You must have an API key to use this endpoint."
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: "GET / return the script selected ready to use."
+
+  /scripts/{postId}:
+    post:
+      description: Post a new script to the storage.
+      parameters:
+        - name: postId
+          in: path
+          description: "You have to put an id of some script."
+          required: true
+        - name: x-api-key
+          in: header
+          description: "You must have an API key to use this endpoint."
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: "GET / return the script selected ready to use."
+
+  /scripts/{delId}:
+    delete:
+      description: Delete the script of the storage.
+      parameters:
+        - name: delId
+          in: path
+          description: "You have to put an id of some script."
+          required: true
+        - name: x-api-key
+          in: header
+          description: "You must have an API key to use this endpoint."
+          required: true
+          schema:
+            type: string
+      responses:
+        200:
+          description: "GET / return the script selected ready to use."
+
+components:
+  securitySchemes:
+    x-api-key:
+      type: apiKey
+      name: x-api-key
+      in: header

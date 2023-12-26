@@ -8,5 +8,6 @@ git clone https://github.com/danilppzz/CDN-Scripts-Example.git
 ```
 
 > [!NOTE]
-> This is the default key for use the cdn:
-> ` yNxkPSyktVoJ6E7S `
+> This project also use swagger to bring the api a documentation and test zone.
+
+<img src="https://raw.githubusercontent.com/danilppzz/soizx/main/Screenshot%202023-12-27%20004018.png">
